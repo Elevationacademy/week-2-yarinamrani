@@ -1,4 +1,4 @@
-i {
+/* i {
   color: tomato;
 }
 
@@ -16,9 +16,152 @@ p {
   .column{
 width: 100%;
   }
-}
+} */
 
 /* .column{
 background-color: tomato; */
+
+
+/* #container{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+} */
+
+
+/* #container{
+  grid-gap: 10px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: 
+"h h m m s s"
+"h h m m s s"
+"h h . . s s"
+"h h f f s s"
+"h h f f s s"
+}
+
+.head{
+  background-color: blue;
+  grid-area: h
+}
+
+.side-nav{
+  background-color: yellow;
+  grid-area: s
+}
+
+.main{
+  background-color:purple;
+  grid-area: m
+}
+
+.foot{
+  background-color:teal;
+  grid-area: f
+} */
+/* #nav-container{
+  display: grid;
+  background-color: #2c3e50;
+  grid-template-columns: repeat(2, 1fr);
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: 'Libre Caslon Display', serif;
+
+}
+
+.main-items{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.nav-item{
+  display: grid;
+  align-content: center;
+  color: #ecf0f1;
+  height: 100%;
+}
+
+.logo-container{
+  display: grid;
+  justify-content: end; */
+/* }
+#results-container{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.result{
+  display: grid;
+  height: 90px;
+  background-color: #16a085;
+  text-align: center;
+  align-content: center;
+  border-radius: 4px;
+} */
+
+#chat-container{
+  background-color: grey;
+  display: grid;
+  grid-gap: 10px;
+  align-content: end;
+  grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15fr 1fr;
+    grid-template-areas: 
+    "f c"
+    "f i";
+}
+
+.chat{
+  text-align: center;
+  display: grid;
+  color: blue;
+  width: 100px;
+  height: 200px;
+  font-family: 'Libre Caslon Display', serif;
+  grid-area: c;
+}
+
+#Friends{
+  background-color: purple;
+  display: grid;
+  color: green;
+  /* align-content: end; */
+  grid-area: f;
+  height:100vh;
+  font-size: 30px;
+  font-weight:500;
+}
+.right-conversation{
+  display: absolute;
+  font-size: 18px;
+  font-weight:500;
+  border: 2px solid #dedede;
+  background-color: #55e4a8;
+  color:rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100;
+}
+.left-conversation{
+  font-size: 18px;
+  font-weight:500;
+  border: 2px solid #dedede;
+  background-color: #556fe4;
+  color:rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px 0;
+}}
+
+#input{
+  grid-area: i;
+  display: grid;
+  font-size: 20px;
 
 }
