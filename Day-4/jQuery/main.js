@@ -114,45 +114,64 @@
 //   let divCopy = `<div class='feedme'>${$(this).text()}</div>`
 //   const elem = $(divCopy)  //use template literals and $(this)
   
-//   $("body").append(elem)
+// //   $("body").append(elem)
+// // })
+// const addDiv = function() {
+//   $("body").append("<div class=box></div>");
+// };
+
+// $("button").on("click", function() {
+//   addDiv();
 // })
-const addDiv = function() {
-  $("body").append("<div class=box></div>");
-};
 
-$("button").on("click", function() {
-  addDiv();
-})
+// $("body").on("click", ".box", function() {
 
-$("body").on("click", ".box", function() {
-
-  alert("hi");
-})
+//   alert("hi");
+// })
 
 
 
-/// jQuery excercies//
-$("body").append('<input type="text" id="my-input" placeholder="Some Text!">')
+// /// jQuery excercies//
+// $("body").append('<input type="text" id="my-input" placeholder="Some Text!">')
 
-$("body").append('<button>Add Human</button>')
+// $("body").append('<button>Add Human</button>')
 
  
 
-$('button').on('click', function() {
-  const inputValue = $('#my-input').val();
+// $('button').on('click', function() {
+//   const inputValue = $('#my-input').val();
 
-  $("ul").append(`<li id=${inputValue}>${inputValue}</li>`)
-})
+//   $("ul").append(`<li id=${inputValue}>${inputValue}</li>`)
+// })
 
-$("ul").on("click", function() {
-  const valueToRemove = $(this).text()
+// $("ul").on("click", function() {
+//   const valueToRemove = $(this).text()
 
-  console.log(valueToRemove)
+//   console.log(valueToRemove)
 
-  $(`#${valueToRemove}`).remove()
-})
-
-
-//excericse 2//
+//   $(`#${valueToRemove}`).remove()
+// })
 
 
+// //excericse 2//
+// $("ul").on("click","li",function(){
+//   $(this).remove()
+// })
+// /////
+
+///excericse 3//
+
+ const div1 = $('body').append('<div class="box"></div>')
+ const div2 = $('body').append('<div class="box"></div>')
+
+ $('body').on('mouseenter','.box',function(){
+  $(this).css('background-color', 'red')
+ })
+
+ $('body').on('mouseout', '.box',function(){
+   $(this).css('background-color', 'green')
+ })
+
+ //
+ 
+	
